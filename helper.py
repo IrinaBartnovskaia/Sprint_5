@@ -11,5 +11,5 @@ def generate_valid_registration_data():
 def generate_registration_data_with_invalid_passwords():
     name = faker.name()
     email = faker.email()
-    password = faker.password(length=2, special_chars=False, digits=True, upper_case=True, lower_case=True)
+    password = faker.password(length=4, special_chars=False, digits=True, upper_case=True, lower_case=True)
     return name, email, password
